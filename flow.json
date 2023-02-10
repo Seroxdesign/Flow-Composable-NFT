@@ -1,6 +1,5 @@
 {
 	"contracts": {
-		"Flowcase": "cadence/contracts/Flowcase.cdc",
 		"MyFunNFT": "cadence/contracts/MyFunNFT.cdc",
 		"FungibleToken": {
 			"source": "./cadence/contracts/FungibleToken.cdc",
@@ -43,7 +42,6 @@
 	"deployments": {
 		"emulator": {
 			"default": [
-				"Flowcase",
 				"MetadataViews",
 				"MyFunNFT",
 				"NonFungibleToken",
