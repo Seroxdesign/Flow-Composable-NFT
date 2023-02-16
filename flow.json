@@ -1,6 +1,11 @@
 {
 	"contracts": {
-		"MyFunNFT": "cadence/contracts/MyFunNFT.cdc",
+		"MyFunNFT": {
+			"source": "./cadence/contracts/MyFunNFT.cdc",
+			"aliases": {
+					"testnet": "0x503b9841a6e501eb"
+			}
+		},
 		"FungibleToken": {
 			"source": "./cadence/contracts/FungibleToken.cdc",
 			"aliases": {
@@ -43,9 +48,8 @@
 		"emulator": {
 			"default": [
 				"MetadataViews",
-				"MyFunNFT",
 				"NonFungibleToken",
-				"FungibleToken"
+				"MyFunNFT"
 			]
 		}
 	}

@@ -9,9 +9,9 @@ import {
 } from '@onflow/flow-cadut'
 
 export const CODE = `
-import "MyFunNFT" from 0xMYFUNNFTADDRESS
-import "MetadataViews" from 0xMETADATAVIEWSADDRESS
-import "NonFungibleToken" from 0xNONFUNGIBLETOKENADDRESS
+import MyFunNFT from 0xMYFUNNFTADDRESS
+import MetadataViews from 0xMETADATAVIEWSADDRESS
+import NonFungibleToken from 0xNONFUNGIBLETOKENADDRESS
 
 transaction(
     editionID: UInt64,
