@@ -1,33 +1,6 @@
 {
 	"contracts": {
-		"MyFunNFT": {
-			"source": "./cadence/contracts/MyFunNFT.cdc",
-			"aliases": {
-					"testnet": "0x503b9841a6e501eb"
-			}
-		},
-		"FungibleToken": {
-			"source": "./cadence/contracts/FungibleToken.cdc",
-			"aliases": {
-					"emulator": "0xee82856bf20e2aa6",
-					"testnet": "0x9a0766d93b6608b7",
-					"mainnet": "0xf233dcee88fe0abe"
-			}
-		},
-		"MetadataViews": {
-			"source": "./cadence/contracts/MetadataViews.cdc",
-			"aliases": {
-					"testnet": "0x631e88ae7f1d7c20",
-					"mainnet": "0x1d7e57aa55817448"
-			}
-		},
-		"NonFungibleToken": {
-			"source": "./cadence/contracts/NonFungibleToken.cdc",
-			"aliases": {
-					"testnet": "0x631e88ae7f1d7c20",
-					"mainnet": "0x1d7e57aa55817448"
-			}
-		}
+		"YearBlocks": "./cadence/contracts/YearBlocks.cdc"
 	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
@@ -36,21 +9,26 @@
 	},
 	"accounts": {
 		"default": {
-			"address": "f3fcd2c1a78f5eee",
-			"key": "ffd05a5df1df795eafccc36e7b7438ceaa668318ea0b904994f195d5240d17f3"
+			"address": "0x59bd82c1ced76141",
+			"key": ""
 		},
 		"emulator-account": {
-			"address": "f8d6e0586b0a20c7",
-			"key": "6d12eebfef9866c9b6fa92b97c6e705c26a1785b1e7944da701fc545a51d4673"
+			"address": "0x59bd82c1ced76141",
+			"key": ""
+		},
+		"testnet-account": {
+			"address": "0x59bd82c1ced76141",
+			"key": ""
 		}
 	},
 	"deployments": {
 		"emulator": {
 			"default": [
-				"MetadataViews",
-				"NonFungibleToken",
-				"MyFunNFT"
+				"YearBlocks"
 			]
+		},
+		"testnet": {
+			"testnet-account": ["YearBlocks"]
 		}
 	}
 }
