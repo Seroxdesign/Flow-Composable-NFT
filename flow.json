@@ -1,24 +1,26 @@
 {
-	"contracts": {
-		"YearBlocks": "./cadence/contracts/YearBlocks.cdc"
-	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
+	"contracts": {
+		"YearBlocks": "./cadence/contracts/YearBlocks.cdc",
+		"NFTSignature": "./cadence/contracts/NFTSignature.cdc"
+	},
 	"accounts": {
-		"default": {
-			"address": "0x59bd82c1ced76141",
-			"key": ""
-		},
 		"emulator-account": {
-			"address": "0x59bd82c1ced76141",
-			"key": ""
+			"address": "0x75226c2acde997b3",
+			"key": "784f0eb08dabe9afdc9aee73a6f850968bea598b5a5d2808acd2c383c3650dc7"
+		},
+		"default": {
+			"address": "0x75226c2acde997b3",
+			"key": "ffd05a5df1df795eafccc36e7b7438ceaa668318ea0b904994f195d5240d17f3"
 		},
 		"testnet-account": {
-			"address": "0x59bd82c1ced76141",
-			"key": ""
+			"address": "0x60e62a84e9488fbf",
+			"key": "c46895ffa24a685e653d89efcc77aed0bfef9c464d1b763ad67b33d4cff66cf7"
 		}
 	},
 	"deployments": {
@@ -28,7 +30,7 @@
 			]
 		},
 		"testnet": {
-			"testnet-account": ["YearBlocks"]
+			"testnet-account": ["YearBlocks", "NFTSignature"]
 		}
 	}
 }
